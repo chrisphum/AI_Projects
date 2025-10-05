@@ -1,0 +1,10 @@
+torch==2.4.*
+torchvision==0.19.*
+diffusers==0.30.*
+transformers==4.44.*
+accelerate==0.34.*
+opencv-python==4.10.*
+matplotlib==3.9.*
+pyyaml==6.0.*
+pandas==2.2.*
+wandb==0.17.*

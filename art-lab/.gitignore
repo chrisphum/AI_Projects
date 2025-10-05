@@ -1,0 +1,7 @@
+__pycache__/
+logs/
+weights/
+wandb/
+.mlflow/
+.venv/
+viz/

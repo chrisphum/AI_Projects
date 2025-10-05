@@ -1,0 +1,21 @@
+seed: 42
+model: "runwayml/stable-diffusion-v1-5"   # swap to SDXL if you want
+prompt: "a small sailing boat at sunrise, film grain"
+negative_prompt: ""
+num_inference_steps: 25
+guidance_scale: 7.5
+sampler: "euler_a"         # document exact sampler
+height: 512
+width: 512
+grid:
+  rows: 2
+  cols: 4
+  variants:
+    - { cfg: 7.5, steps: 2 }
+    - { cfg: 5.0, steps: 3 }
+    - { cfg: 9.0, steps: 5 }
+    - { cfg: 7.5, steps: 8 }
+    - { cfg: 7.5, steps: 12, prompt: "…add “90s digital graphics overlay”" }
+    - { cfg: 7.5, steps: 20, negative_prompt: "text, watermark" }
+    - { cfg: 7.5, steps: 25, width: 640, height: 640 }
+    - { cfg: 7.5, steps: 50 }  # duplicate for determinism check
